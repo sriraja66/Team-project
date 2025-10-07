@@ -1,0 +1,80 @@
+:root{
+border-radius:12px;
+border:1px solid rgba(217,83,79,0.06);
+box-shadow:0 6px 18px rgba(20,20,20,0.03);
+}
+
+
+.recipe-image{
+width:100%;
+border-radius:12px;
+display:block;
+margin-bottom:12px;
+object-fit:cover;
+}
+
+
+.serving{
+font-size:14px;
+color:var(--muted);
+margin-bottom:12px;
+}
+
+
+.badge{
+display:inline-block;
+padding:6px 10px;
+border-radius:999px;
+background:rgba(217,83,79,0.06);
+color:var(--accent);
+font-weight:600;
+font-size:13px;
+}
+
+
+footer.page-footer{
+margin-top:20px;
+padding-top:14px;
+border-top:1px dashed rgba(0,0,0,0.04);
+font-size:13px;
+color:var(--muted);
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+footer.page-footer small{display:block}
+
+
+.print-btn{
+display:inline-block;
+padding:10px 14px;
+border-radius:10px;
+background:var(--accent);
+color:#fff;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 8px 20px rgba(217,83,79,0.12);
+}
+
+
+/* small refinements */
+li strong{color:#2a2a2a}
+p{margin:0 0 10px 0}
+
+
+/* Accessibility: focus states */
+a:focus, .print-btn:focus{outline:3px solid rgba(210,90,80,0.18); outline-offset:3px}
+
+
+/* Utility */
+.center{display:flex;align-items:center;justify-content:center}
+
+
+/* Print rules */
+@media print{
+body{background:white;padding:0}
+.container{box-shadow:none;border-radius:0;padding:12px}
+.header-media{display:none}
+}
